@@ -1004,4 +1004,17 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

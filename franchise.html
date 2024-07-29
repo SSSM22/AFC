@@ -29,7 +29,61 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+     .burger-container {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            width: 600px;
+            border-radius: 20px;
+        }
+        
+        .burger-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
 
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .burger-item {
+            position: relative;
+            padding-left: 30px;
+            margin: 10px 0;
+        }
+        
+        .burger-item::before {
+            content: "🍔";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+
+</style>
 </head>
 
 <body class="sub_page">
@@ -62,66 +116,11 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="book.html">Book Table <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="franchise.html">Franchise <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             <div class="user_option">
-              <!--<a href="" class="user_link">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <a class="cart_link" href="#">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>-->
+
               </a>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -144,55 +143,50 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+          Let's Grow Together By Building a Franchise
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div>
-                <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="">
-                    2
-                  </option>
-                  <option value="">
-                    3
-                  </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
-                  </option>
-                </select>
-              </div>
-              <div>
-                <input type="date" class="form-control">
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
-          </div>
+            <p>Absolute Fried Chicken is a fast-food restaurant chain that specializes in fried chicken.
+               The company was founded in 2021 by a group of friends who wanted to bring the taste of Southern-style fried chicken to the masses.
+                Since then, Absolute Fried Chicken has grown to become one of the most popular fast-food chains in the country, with locations in every major city.
+                 We are now looking to expand our brand by offering franchise opportunities to entrepreneurs who share our passion for great food and excellent customer service.
+                  If you are interested in becoming a franchisee, please call the below phone numbers</p>
+                  <center><a href="tel:76740 73004">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +91 76740 73004 -Chaitainya Varma
+                    </span>
+                    <br>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +91 76740 73004
+                    </span>
+                  </a></center>           
+              <p>Our plan is to establish "Low-cost, risk-free, and scalable" franchises with upscale qualities that will enable us to establish a well-known food chain.</p>
+                </div>
         </div>
         <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
+          <div class="burger-container"style="height: 100%;width: 100%;">
+            <center><h1>Own a Franchise</h1></center>
+              <div style="width: 50%; float:left">
+                <ul>
+                  <li class="burger-item">Low-Cost</li>
+                  <li class="burger-item">Risk-Free</li>
+                  <li class="burger-item">Budget-Friendly</li>
+                  <li class="burger-item">Scalable</li>
+                  <li class="burger-item">Proper guidance</li>
+                  <li class="burger-item">Trust and Quality</li>
+                </ul> 
+            </div>
+            <div class="logo" style="width: 50%; float:right">
+              <img src="images/AFC Final logo-01.png" alt="franchise" >
+            </div>
+           
           </div>
         </div>
       </div>
@@ -222,13 +216,25 @@
                   Shivarampally-Location
                 </span>
               </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="https://maps.app.goo.gl/53Kbbonv1pP2sBXk6" target=”_blank” >
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Attapur-Location
                 </span>
               </a>
-              <a href="">
+              <a href="https://maps.app.goo.gl/jayNCid5rbphBa1Y8" target=”_blank” >
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Kondapur-Location
+                </span>
+              </a>
+              <a href="tel:76740 73004">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 76740 73004
+                </span>
+              </a>
+              <a href="mailto:AbsoluteyFriedChicken@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   AbsoluteFriedChicken@gmail.com
@@ -248,20 +254,11 @@
                Embrace the intersection of delicious food and digital connectivity for a modern dining experience.
             </p>
             <div class="footer_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              <p>
+                Follow us on
+              </p>             
+              <a href="https://www.instagram.com/afcofficial.in?igsh=MWUzOXBxYm50d252MQ==" target="_blank">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
               </a>
             </div>
           </div>

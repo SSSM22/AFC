@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Basic -->
@@ -13,27 +13,91 @@
   <meta name="author" content="" />
   <link rel="icon" href="images/favicon1.ico" type="image/png">
 
-  <title> AFC </title>
+  <title>AFC</title>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!--owl slider stylesheet -->
+  <!-- Owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select  -->
+  
+  <!-- Nice select -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
-  <!-- font awesome style -->
+  
+  <!-- Font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
+  
+  <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  
+  <!-- Spinner and loader styles -->
+  <style>
+    .loading-image {
+      width: 20%; /* Adjust the size as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
 
+    .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 1);
+      z-index: 10000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px; /* Adjust the spinner size as needed */
+      height: 300px; /* Adjust the spinner size as needed */
+      margin-top: -150px; /* Center the spinner */
+      margin-left: -150px; /* Center the spinner */
+      border: 10px solid transparent;
+      border-top: 10px solid #FFA500; /* Spinner color */
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 
 </head>
 
 <body>
+
+  <div class="loader-wrapper">
+    <div class="spinner"></div>
+    <img src="images/AFC Final logo-01.png" alt="Loading..." class="loading-image">
+  </div>
+
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+    $(window).on("load", function() {
+      setTimeout(function() {
+        $(".loader-wrapper").hide(); // Fade out the loader after 1 second
+      }, 1000); // 1-second delay
+    });
+  </script>
+
+
 
   <div class="hero_area">
     <div class="bg-box">

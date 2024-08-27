@@ -81,6 +81,13 @@
             max-width: 100%;
             height: auto;
         }
+
+        .line {
+            width: 90%; /* Set the width of the line */
+            height: 2px; /* Set the height of the line */
+            background-color:  #e69c00; /* Set the color of the line */
+            margin: 10px; /* Add some margin around the line */
+        }
     
 
 </style>
@@ -126,6 +133,68 @@
     </header>
     <!-- end header section -->
   </div>
+
+
+  <div class="container">
+    <h1 class="text-center mt-5">Franchise Models</h1>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/chocolava.jpg" class="card-img-top" alt="Grab 'N' Go Model">
+                <div class="card-body">
+                  <h2 class="card-title text-center">Grab "N" Go</h2> 
+                    <div class="line"></div> <!-- line seperator -->
+                    <p class="card-text">
+                        <ul>
+                            <li>Quick Service BurgerMan</li>
+                            <li>Area 250 to 300 sq.ft</li>
+                            <li>Ideal for High-Street, Townships, IT Parks, Metros etc.</li>
+                            <li>Team Size of 4+1</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/m2.jpg" class="card-img-top" alt="Hyperlocal Model">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Hyperlocal</h2>
+                    <div class="line"></div> <!-- line seperator -->
+                    <p class="card-text">
+                        <ul>
+                            <li>High Street BurgerMan</li>
+                            <li>Area 600 to 700 Sq.ft</li>
+                            <li>Ideal for Prime Location, High Rental, Fast Casual Outlets</li>
+                            <li>Team Size of 6 + 1</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/chocobrownie.jpg" class="card-img-top" alt="Hybrid Model">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Hybrid</h2>
+                    <div class="line"></div> <!-- line seperator -->
+                    <p class="card-text">
+                        <ul>
+                            <li>BurgerMan + Cloud Brands</li>
+                            <li>Area 900 to 1000 Sq.ft</li>
+                            <li>Ideal for Affordable Rental, Casual Dining Experience</li>
+                            <li>Team Size of R + Manager</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 
   <!-- book section -->
   <section class="book_section layout_padding">
@@ -311,9 +380,12 @@
   <script src="js/custom.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    
   </script>
   <!-- End Google Map -->
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
